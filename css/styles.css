@@ -10,6 +10,19 @@ html, body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   margin-top: 15px; }
 
+main {
+  margin-bottom: 100px; }
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
 .container {
   max-width: 1200px;
   margin: 0px auto;
@@ -84,7 +97,10 @@ footer {
   background-color: #262626;
   width: 100%;
   border-top: 10px solid #499edf;
-  margin-top: 20px; }
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
 
 .social-links {
   display: -webkit-box;
@@ -176,7 +192,7 @@ footer {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    background-color: #ffb3b3;
+    background-color: #499edf;
     padding: 70px 30px 20px 10px; }
   .header__menu.active {
     top: 0; }

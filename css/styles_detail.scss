@@ -1,0 +1,78 @@
+h1{
+	text-align: center;
+	letter-spacing: 0.1em;
+	box-shadow: 5px 10px 8px 10px #499edf;
+	width: 30%;
+	margin: 0 auto;
+}
+.content__date{
+	margin-top: 15px;
+	font-size: 18px;
+	border-bottom: 5px double #000;
+	width: 20%;
+	text-align: center;
+}
+.content__about-event{
+	margin: 20px 100px;
+	font-size: 18px;
+	text-align: justify;
+}
+.content__event-images{
+	display: flex;
+}
+
+.content__event-image{
+	padding-right: 20px;
+	flex: 0 1 25%;
+}
+.content__event-program{
+	border: 3px solid #262626;
+	width: 75%;
+	margin: 0 auto;
+
+	& h3{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	& p {
+		margin-bottom: 20px;
+	}
+}
+.content__event-kategory{
+	margin: 20px 0px;
+}
+.cards__image{
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 58% 0px;
+	overflow: hidden;
+	position: relative;
+}
+
+.thumbnail{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	&:hover{
+		position: relative;
+	    top: -25px;
+	    left: -35px;
+	    width: 110%;
+	    height: auto;
+	    display: block;
+	    z-index: 15;
+	}
+}
+@media (max-width: 767px) {
+	.content__event-images{
+		display: block;
+	}
+	.content__event-image{
+		width: 400px;
+		margin: 0 auto;
+	}
+
+}
