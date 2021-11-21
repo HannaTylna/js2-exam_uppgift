@@ -5,8 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Stockholm events</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles_create_event.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+	<script src="scripts/script_create-event.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -45,7 +47,65 @@
 		<main>
 			<div class="container">
 				<div class="content">
-				
+					<h1>Add your event</h1>
+					<form class="content__form" name="create_event">
+						<ul>
+							<li>
+								<label class="form__label" for="name">Name:</label>
+								<input class="form__input" id="form_name" type="text" name="name" placeholder="Event's name">
+								<span class="error_form" id="name_error_message">Please enter the name of event!</span><br><br>
+							</li>
+							<li>
+								<label class="form__label" for="date">Date:</label>
+								<input class="form__input" id="form_date" type="date" name="date">
+								<span class="error_form" id="date_error_message">Please enter the date of event!</span><br><br>
+							</li>
+							<li>
+								<label class="form__label" for="about">Description:</label>
+								<textarea name="about" id="form_about" cols="30" rows="10" placeholder="Tell about your event"></textarea><br><br>
+								<span class="error_form" id="about_error_message">Please enter the description of event!</span>
+							</li>
+							<li>
+								<label class="form__label" for="agenda">Agenda:</label>
+								<textarea name="agenda" id="form_agenda" cols="30" rows="10" 
+								placeholder="
+								Ex. 09:00-10:30 lektion 
+								10:30-11:00 break
+								11:00-13:00 lektion"></textarea>
+								<span class="error_form" id="agenda_error_message">Please enter the agenda of event!</span><br><br>
+							</li>
+							<li>
+								<label class="form__label" for="images">Images:</label>
+								<input class="form__input-image" type="file" name="images" size="30">
+								<li>
+									<label class="form__label" for="images"></label>
+									<input class="form__input-image" type="file" name="images" size="30">
+								</li>
+								<li>
+									<label class="form__label" for="images"></label>
+									<input class="form__input-image" type="file" name="images" size="30">
+								</li>
+								<li>
+									<label class="form__label" for="images"></label>
+									<input class="form__input-image" type="file" name="images" size="30">
+								</li>
+								<span class="error_form images_error_message">Please upload an image!</span><br><br>
+							</li>
+							<li>
+								<label class="form__label" for="kategory">Kategory:</label>
+								<select name="kategory" id="form_selection">
+									<option value="none"></option>
+									<option value="fun">Fun</option>
+									<option value="education">Education</option>
+									<option value="afterwork">Afterwork</option>
+								</select>
+								<span class="error_form" id="select_error_message">Please choose a kategory!</span><br><br>
+							</li>
+							<li>
+								<input class="form__submit" type="submit" value="Submit">
+							</li>
+						</ul>
+					</form>
 				</div>
 			</div>
 		</main>

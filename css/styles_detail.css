@@ -3,6 +3,7 @@ h1 {
   letter-spacing: 0.1em;
   -webkit-box-shadow: 5px 10px 8px 10px #499edf;
   box-shadow: 5px 10px 8px 10px #499edf;
+  border-radius: 1em;
   width: 30%;
   margin: 0 auto; }
 

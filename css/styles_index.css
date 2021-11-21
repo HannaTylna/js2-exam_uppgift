@@ -2,18 +2,13 @@
   text-align: center;
   font-size: 35px;
   line-height: 35px;
-  color: #191970;
-  font-family: Comic Sans MS;
-  margin: 18px 0px 0px 0px;
-  background: #eeaeca;
-  background: -webkit-radial-gradient(circle, #eeaeca 0%, #499edf 100%);
-  background: -o-radial-gradient(circle, #eeaeca 0%, #499edf 100%);
-  background: radial-gradient(circle, #eeaeca 0%, #499edf 100%);
+  color: #000;
+  margin: 0px auto;
   padding: 12px;
-  -webkit-box-shadow: 0px 0px 10px 10px #499edf;
-  box-shadow: 0px 0px 10px 10px #499edf;
-  width: 60%;
-  margin: 0 auto; }
+  -webkit-box-shadow: 5px 5px 5px 5px #499edf;
+  box-shadow: 5px 5px 5px 5px #499edf;
+  border-radius: 1em;
+  width: 40%; }
 
 .content__main-image {
   margin-top: 20px;
