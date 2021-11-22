@@ -1,3 +1,3 @@
-function myFunction() {
-	$('.myPopup').toggleClass('show');
+function myFunction(el) {
+	$(el).find('.myPopup').toggleClass('show');
 };

@@ -1,11 +1,4 @@
-h1{
-	text-align: center;
-	letter-spacing: 0.1em;
-	box-shadow: 5px 10px 8px 10px #499edf;
-	border-radius: 1em;
-	width: 30%;
-	margin: 0 auto;
-}
+
 .content__date{
 	margin-top: 15px;
 	font-size: 18px;
@@ -52,19 +45,19 @@ h1{
 .thumbnail{
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
-	position: absolute;
+	// object-fit: cover;
+	// position: absolute;
 	top: 0;
 	left: 0;
 
 	&:hover{
-		position: relative;
+		// position: relative;
 	    top: -25px;
 	    left: -35px;
 	    width: 110%;
 	    height: auto;
 	    display: block;
-	    z-index: 15;
+	    // z-index: 15;
 	}
 }
 @media (max-width: 767px) {

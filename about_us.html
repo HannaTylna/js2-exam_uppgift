@@ -5,8 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Stockholm events</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles_about_us.css">
+	<link rel="stylesheet" type="text/css" href="css/styles_create_event.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
+	<script src="scripts/script_create-event.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -45,7 +48,66 @@
 		<main>
 			<div class="container">
 				<div class="content">
-				
+					<h1>About us</h1>
+					<p class="content__paragragh">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi commodi laborum aliquid natus ut magnam, voluptate dolor recusandae odit placeat incidunt nemo quis! Sapiente iste excepturi velit, soluta. Nesciunt, deserunt.</p>
+					<h3>Our team</h3>
+					<p class="content__paragragh">Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Eum nobis ipsum unde, fuga fugit. Sunt dolorum consequatur voluptatibus itaque, exercitationem! Veritatis porro corrupti, quae molestias itaque at soluta quasi vitae.</p>
+					<h3>Our CEO</h3>
+					<p class="content__paragragh">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nesciunt quasi ut animi obcaecati adipisci, quod, fugiat dolorum rem quae, dolor asperiores veniam, beatae id provident voluptas at unde aperiam.</p>
+					<div class="content__CEO">
+						<div class="content__CEO-photo">
+							<img 
+								src="images/12.jpg" 
+								alt="A CEO photo"
+								width="500px" 
+								class="photo_CEO" 
+							/>
+						</div>
+						<div class="content__CEO-info">
+							<div class="info__label">
+								Telephone:
+							</div>
+							<div class="info__text">
+								070 000 11 22
+							</div><br><br>
+							<div class="info__label">
+								Email:
+							</div>
+							<div class="info__text">
+								ceo.stockholm-event@gmail.com
+							</div>
+						</div>
+					</div>
+					<div class="content__team-photo">
+						<img 
+							src="images/13.jpg" 
+							alt="A photo of team"
+							class="photo_team" 
+						/>
+					</div>
+					<h2>Contact form</h2>
+					<form action="#" class="content__form" name="create_event">
+						<ul>
+							<li>
+								<label class="form__label" for="firstName">Name</label>
+								<input class="form__input" id="form_name" type="text" name="firstName" placeholder="Your name">
+								<span class="error_form" id="name_error_message">Please enter your name!</span><br><br>
+							</li>
+							<li>
+								<label class="form__label" for="email">Email</label>
+								<input class="form__input" id="form_email" type="email" name="email">
+								<span class="error_form" id="email_error_message">Please enter your email!</span><br><br>
+							</li>
+							<li>
+								<label class="form__label" for="about">Message:</label>
+								<textarea name="about" id="form_about" cols="30" rows="10"></textarea>
+								<span class="error_form" id="about_error_message">Please enter your message!</span><br><br>
+							</li>
+							<li>
+								<input class="form__submit" type="submit" name="saubmit" value="Submit">
+							</li>
+						</ul>
+					</form>
 				</div>
 			</div>
 		</main>

@@ -1,13 +1,4 @@
-h1{
-	text-align: center;
-	margin-bottom: 15px;
-	box-shadow: 5px 5px 5px 5px #499edf;
-    border-radius: 1em;
-    width: 40%;
-    margin: 0 auto;
-    padding: 12px;
 
-}
 .content__form{
 	font-family: auto;
 	padding: 20px;
@@ -43,7 +34,11 @@ ul{
 	font-size: 15px;
 	font-family: auto;
 }
-
+.error_form{
+	margin-left: 100px;
+	color: #F90A0A;
+	font-weight: bold;
+}
 .form__submit{
 	position: relative;
 	background: #262626;

@@ -28,6 +28,19 @@ main {
   margin: 0px auto;
   padding: 0px 10px; }
 
+h1 {
+  text-align: center;
+  font-size: 35px;
+  line-height: 35px;
+  color: #000;
+  margin: 0px auto;
+  padding: 12px;
+  -webkit-box-shadow: 5px 5px 5px 5px #499edf;
+  box-shadow: 5px 5px 5px 5px #499edf;
+  border-radius: 1em;
+  width: 40%;
+  text-transform: uppercase; }
+
 .header {
   position: fixed;
   width: 100%;

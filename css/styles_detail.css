@@ -1,12 +1,3 @@
-h1 {
-  text-align: center;
-  letter-spacing: 0.1em;
-  -webkit-box-shadow: 5px 10px 8px 10px #499edf;
-  box-shadow: 5px 10px 8px 10px #499edf;
-  border-radius: 1em;
-  width: 30%;
-  margin: 0 auto; }
-
 .content__date {
   margin-top: 15px;
   font-size: 18px;
@@ -52,19 +43,14 @@ h1 {
 .thumbnail {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: absolute;
   top: 0;
   left: 0; }
   .thumbnail:hover {
-    position: relative;
     top: -25px;
     left: -35px;
     width: 110%;
     height: auto;
-    display: block;
-    z-index: 15; }
+    display: block; }
 
 @media (max-width: 767px) {
   .content__event-images {

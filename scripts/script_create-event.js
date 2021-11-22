@@ -6,6 +6,7 @@ $(function() {
 	$("#agenda_error_message").hide();
 	$(" .images_error_message").hide();
 	$("#select_error_message").hide();
+	$("#email_error_message").hide();
 
 	var error_name = false;
 	var error_date = false;
@@ -13,6 +14,7 @@ $(function() {
 	var error_agenda = false;
 	var error_images = false;
 	var error_select = false;
+	var error_email = false;
 
 	$("#form_name").focusout(function(){
 		check_name();
@@ -31,6 +33,9 @@ $(function() {
 	});
 	$("#form_selection").focusout(function() {
 		check_selection();
+	});
+	$("#form_email").focusout(function() {
+		check_email();
 	});
 
 	function check_name() {
@@ -101,6 +106,16 @@ $(function() {
 		}
 	}
 
+	function check_selection() {
+		var email = $("#form_email").val();
+		if (email !== ''){
+			$("#email_error_message").hide();
+		} else {
+		   	$("#email_error_message").show();
+		   	error_email = true;
+		}
+	}
+
 	$(".content__form").submit(function() {
 		error_name = false;
 		error_date = false;
@@ -108,6 +123,7 @@ $(function() {
 		error_agenda = false;
 		error_images = false;
 		error_select = false;
+		error_email = false;
 
 		check_name();
 		check_date();
@@ -115,12 +131,14 @@ $(function() {
 		check_agenda();
 		check_images();
 		check_selection();
+		check_email();
 
-		if (error_name === false && error_date === false && error_about === false && error_agenda === false && error_images === false && error_select === false) {
+		if (error_name === false && error_date === false && error_about === false && error_agenda === false && error_images === false && error_select === false && error_email === false) {
 			$(".content__form").html("<div id='message'></div>");
-			$("#message").html("<h2>Registration Successfull!</h2>")
+			$("#message")
+			.html("<h2>Registration is successfull!</h2>")
 			
-			return true;
+			return false;
 		} else {
 			alert("Please Fill the form Correctly");
 			return false;
