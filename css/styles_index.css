@@ -1,7 +1,9 @@
 .content__main-image {
   margin-top: 20px;
   max-width: 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px #262626;
+  box-shadow: 5px 5px 5px 5px #262626; }
 
 .cards {
   margin-top: 20px; }
@@ -15,7 +17,12 @@
   -webkit-box-flex: 0;
   -ms-flex: 0 1 33.333%;
   flex: 0 1 33.333%;
-  padding: 0px 15px; }
+  padding: 10px;
+  -webkit-box-shadow: 5px 5px 5px 5px #499edf;
+  box-shadow: 5px 5px 5px 5px #499edf;
+  border-radius: 1em;
+  margin-right: 20px;
+  margin-bottom: 20px; }
 
 .cards__image {
   margin: 0px 0px 20px 0px;

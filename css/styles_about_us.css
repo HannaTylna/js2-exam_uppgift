@@ -6,7 +6,8 @@ h1 {
 
 h3 {
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  font-size: 24px; }
 
 h2 {
   text-transform: uppercase;
@@ -17,11 +18,20 @@ h2 {
 .content__paragragh {
   text-align: justify; }
 
-.content__CEO {
+.content__CEO-paragragh {
+  text-align: justify; }
+
+.content__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px 0px 30px 0px; }
+  margin-top: 20px; }
+
+.content__CEO {
+  margin: 0px 0px 30px 0px;
+  -webkit-box-shadow: 5px 5px 5px 5px #499edf;
+  box-shadow: 5px 5px 5px 5px #499edf;
+  padding: 20px; }
 
 .content__CEO-photo {
   -webkit-box-flex: 0;
@@ -51,6 +61,11 @@ h2 {
   .info__label a {
     color: #000;
     text-decoration: none; }
+
+.content__our-team {
+  -webkit-box-shadow: 5px 5px 5px 5px #499edf;
+  box-shadow: 5px 5px 5px 5px #499edf;
+  padding: 20px; }
 
 .content__team-photo {
   margin: 0px 0px 20px 0px;

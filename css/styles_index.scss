@@ -8,6 +8,7 @@ $color_5: #262626;
 	margin-top: 20px;
 	max-width: 100%;
 	margin-bottom: 20px;
+	box-shadow: 5px 5px 5px 5px $color_5;
 }
 .cards{
 	margin-top: 20px;
@@ -17,7 +18,11 @@ $color_5: #262626;
 }
 .cards__column{
 	flex: 0 1 33.333%;
-	padding: 0px 15px;
+	padding: 10px;
+	box-shadow: 5px 5px 5px 5px $color_3;
+	border-radius: 1em;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 .cards__image{
 	margin: 0px 0px 20px 0px;
