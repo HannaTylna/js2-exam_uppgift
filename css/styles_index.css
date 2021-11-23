@@ -3,6 +3,9 @@
   max-width: 100%;
   margin-bottom: 20px; }
 
+.cards {
+  margin-top: 20px; }
+
 .cards__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,7 +88,7 @@
 
 .cards__date {
   padding: 0.5rem;
-  background: rgba(36, 36, 36, 0.8);
+  background: #262626;
   position: absolute;
   top: 0;
   text-align: center;

@@ -1,7 +1,16 @@
+$color_1: #000;
+$color_2: #fff;
+$color_3: #499edf;
+$color_4: #808080;
+$color_5: #262626;
+
 .content__main-image{
 	margin-top: 20px;
 	max-width: 100%;
 	margin-bottom: 20px;
+}
+.cards{
+	margin-top: 20px;
 }
 .cards__row{
 	display: flex;
@@ -41,8 +50,8 @@
 		margin: 10px auto;
 		text-transform: uppercase;
 		font-weight: bold;
-		border: 2px solid #499edf;
-		background-color: #499edf;
+		border: 2px solid $color_3;
+		background-color: $color_3;
 		opacity: 80%;
 		padding: 5px;
 		border-radius: 20px;
@@ -52,11 +61,11 @@
 	padding-bottom: 40px;
 	& a{
 		text-decoration: none;
-		color: #000;
+		color: $color_1;
 		font-weight: bold;
 		font-size: 18px;
 		&:hover{
-			border-bottom: 2px solid #000;
+			border-bottom: 2px solid $color_1;
 		}
 	}
 }
@@ -67,8 +76,8 @@
 	& .popuptext {
 		visibility: hidden;
 		width: 200px;
-		background-color: #262626;
-		color: #fff;
+		background-color: $color_5;
+		color: $color_2;
 		text-align: center;
 		border-radius: 6px;
 		padding: 8px 0;
@@ -85,7 +94,7 @@
 			margin-left: -5px;
 			border-width: 5px;
 			border-style: solid;
-			border-color: #262626 transparent transparent transparent;
+			border-color: $color_5 transparent transparent transparent;
 		}
 	}
 	& .show {
@@ -95,12 +104,12 @@
 
 .cards__date {
     padding: 0.5rem;
-    background: rgba(36,36,36,.8);
+    background: $color_5;
     position: absolute;
     top: 0;
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    color: $color_2;
     left: 1rem;
     width: 5rem;
 

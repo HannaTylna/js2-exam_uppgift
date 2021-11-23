@@ -1,8 +1,10 @@
+$color_1: #000;
+$color_5: #262626;
 
 .content__date{
 	margin-top: 15px;
 	font-size: 18px;
-	border-bottom: 5px double #000;
+	border-bottom: 5px double $color_1;
 	width: 20%;
 	text-align: center;
 }
@@ -20,7 +22,7 @@
 	flex: 0 1 25%;
 }
 .content__event-program{
-	border: 3px solid #262626;
+	border: 3px solid $color_5;
 	width: 75%;
 	margin: 0 auto;
 

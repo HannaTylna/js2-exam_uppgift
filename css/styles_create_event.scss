@@ -1,11 +1,15 @@
+$color_2: #fff;
+$color_4: #808080;
+$color_5: #262626;
+$color_6: #F90A0A;
 
 .content__form{
 	font-family: auto;
 	padding: 20px;
-	box-shadow: 5px 10px 8px 10px #262626;
+	box-shadow: 5px 10px 8px 10px $color_5;
 	border-radius: 1em;
 	display: flex;
-	width: 70%;
+	width: 50%;
 	margin: 20px auto 40px auto;
 
 	& li + li{
@@ -28,7 +32,7 @@ ul{
 .form__input, textarea, #form_selection{
 	width: 70%;
 	box-sizing: border-box;
-	border: 1px solid #999;
+	border: 1px solid $color_4;
 	border-radius: 1em;
 	padding: 5px 10px;
 	font-size: 15px;
@@ -36,7 +40,7 @@ ul{
 }
 .error_form{
 	margin-left: 100px;
-	color: #F90A0A;
+	color: $color_6;
 	font-weight: bold;
 }
 .form__submit{
@@ -44,7 +48,7 @@ ul{
 	position: relative;
 	background: #262626;
     padding: 10px;
-    color: #fff;
+    color: $color_2;
     text-transform: uppercase;
     border-radius: 1em;
     letter-spacing: 0.1em;

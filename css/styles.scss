@@ -1,12 +1,19 @@
+$color_1: #000;
+$color_2: #fff;
+$color_3: #499edf;
+$color_4: #808080;
+$color_5: #262626;
+
 *,*:before,*:after{
 	padding: 0;
 	margin: 0;
 	border: 0;
 	box-sizing: border-box;
 }
+
 html, body{
 	height: 100%;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: "Times New Roman", Times, serif;
 	margin-top: 15px;
 }
 main{
@@ -27,12 +34,12 @@ h1{
 	text-align: center;
 	font-size: 35px;
 	line-height: 35px;
-    color: #000;
+    color: $color_1;
     margin: 0px auto;
     padding: 12px;
-    box-shadow: 5px 5px 5px 5px #499edf;
+    box-shadow: 5px 5px 5px 5px $color_3;
     border-radius: 1em;
-    width: 40%;
+    width: 60%;
     text-transform: uppercase;
 }
 
@@ -42,7 +49,7 @@ h1{
 	top: 0;
 	left: 0;
 	z-index: 10;
-	background-color: #499edf;
+	background-color: $color_3;
 
 	&:before{
 		content: '';
@@ -77,14 +84,14 @@ h1{
 	}
 }
 .header__link {
-	color: #000;
+	color: $color_1;
 	text-transform: uppercase;
 	font-size: 18px;
 	text-decoration: none;
 	font-weight: bold;
 
 	&:hover{
-		border-bottom: 4px solid #000;
+		border-bottom: 4px solid $color_1;
 	}
 }
 .header__logo{
@@ -101,9 +108,9 @@ h1{
 }
 
 footer {
- 	background-color: #262626;
+ 	background-color: $color_5;
  	width: 100%;
- 	border-top: 10px solid #499edf;
+ 	border-top: 10px solid $color_3;
  	margin-top: 20px;
  	position: fixed;
  	bottom: 0;
@@ -121,19 +128,19 @@ footer {
 .footer__social-link a{
 	font-weight: bold;
 	text-decoration: none;
-	color: #fff;
+	color: $color_2;
 	text-transform: uppercase;
 	& svg{
 		margin-bottom: -5px;
 	}
 	&:hover{
-		border-bottom: 2px solid #fff;
+		border-bottom: 2px solid $color_2;
 	}
 
 }
 .copyrights {
 	font-size: 14px;
-	color: #808080;
+	color: $color_4;
 	margin-left: 10px;
 	padding-top: 15px;
 	padding-bottom: 5px;
@@ -170,7 +177,7 @@ footer {
 
 		&:before, &:after, & span{
 			content: '';
-			background-color: #000;
+			background-color: $color_1;
 			position: absolute;
 			width: 100%;
 			height: 4px;
@@ -207,7 +214,7 @@ footer {
 		height: 300px;
 		overflow: auto;
 		transition: all 0.3s ease 0s;
-		background-color: #499edf;
+		background-color: $color_3;
 		padding: 70px 30px 20px 10px;
 	}
 	.header__menu.active{
@@ -220,8 +227,8 @@ footer {
 		}
 	}
 	.header__link:hover{
-	 	color: #fff;
-	 	border-bottom: 2px solid #fff;
+	 	color: $color_2;
+	 	border-bottom: 2px solid $color_2;
 	}
 	.social-links {
 		padding-bottom: 10px;
@@ -230,7 +237,7 @@ footer {
 		right: 0;		
 		padding-bottom: 10px;
 		text-align: center;
-		border-top: 1px solid #808080;
+		border-top: 1px solid $color_4;
 		margin-left: 0;
 	}
 }

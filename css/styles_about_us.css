@@ -5,13 +5,17 @@ h1 {
   margin-bottom: 40px; }
 
 h3 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 h2 {
   text-transform: uppercase;
   margin-bottom: 30px;
   text-align: center;
   margin-left: 50px; }
+
+.content__paragragh {
+  text-align: justify; }
 
 .content__CEO {
   display: -webkit-box;
@@ -43,7 +47,6 @@ h2 {
 
 .info__label {
   font-size: 20px;
-  font-weight: 700;
   margin: 30px 0px 0px 0px; }
   .info__label a {
     color: #000;
