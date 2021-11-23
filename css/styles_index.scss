@@ -75,7 +75,7 @@ $color_5: #262626;
 
 	& .popuptext {
 		visibility: hidden;
-		width: 200px;
+		width: 250px;
 		background-color: $color_5;
 		color: $color_2;
 		text-align: center;
@@ -84,7 +84,7 @@ $color_5: #262626;
 		position: absolute;
 		z-index: 1;
 		bottom: 125%;
-		margin-left: -170px;
+		margin-left: -190px;
 
 		&:after {
 			content: '';

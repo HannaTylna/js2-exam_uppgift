@@ -7,7 +7,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 60%;
   margin: 20px auto 40px auto; }
   .content__form li + li {
     margin-top: 1em; }
