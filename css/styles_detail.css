@@ -1,9 +1,17 @@
+.content__event {
+  border-radius: 1em;
+  margin-top: 40px;
+  -webkit-box-shadow: 5px 5px 5px 5px #499edf;
+  box-shadow: 5px 5px 5px 5px #499edf;
+  padding: 20px; }
+
 .content__date {
   margin-top: 15px;
   font-size: 18px;
   border-bottom: 5px double #000;
   width: 20%;
-  text-align: center; }
+  text-align: center;
+  margin-left: 40px; }
 
 .content__about-event {
   margin: 20px 100px;
@@ -24,7 +32,8 @@
 .content__event-program {
   border: 3px solid #262626;
   width: 75%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 5px; }
   .content__event-program h3 {
     text-align: center;
     margin-bottom: 10px; }
@@ -57,6 +66,12 @@
     display: block; }
   .content__event-image {
     width: 400px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .content__date {
+    width: 30%; }
+  .content__about-event {
+    margin: 20px 40px; }
+  .cards__image {
+    padding: 0px; } }
 
 /*# sourceMappingURL=styles_detail.css.map */
