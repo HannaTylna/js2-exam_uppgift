@@ -1,76 +1,74 @@
-$color_2: #fff;
-$color_4: #808080;
-$color_5: #262626;
-$color_6: #F90A0A;
+@use "variables";
+@import "styles.css";
 
-.content__form{
-	font-family: auto;
-	padding: 20px;
-	box-shadow: 5px 10px 8px 10px $color_5;
-	border-radius: 1em;
-	display: flex;
-	width: 60%;
-	margin: 20px auto 40px auto;
+.content__form {
+  font-family: auto;
+  padding: 20px;
+  box-shadow: 5px 10px 8px 10px $color_5;
+  border-radius: 1em;
+  display: flex;
+  width: 60%;
+  margin: 20px auto 40px auto;
 
-	& li + li{
-		margin-top: 1em;
-	}
+  & li + li {
+    margin-top: 1em;
+  }
 }
 
-ul{
-	list-style: none;
-	padding: 0;
-	margin: 0;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.form__label{
-	display: inline-block;
-	width: 25%;
-	text-align: right;
-	font-weight: bold;
+.form__label {
+  display: inline-block;
+  width: 25%;
+  text-align: right;
+  font-weight: bold;
 }
-.form__input, textarea, #form_selection{
-	width: 70%;
-	box-sizing: border-box;
-	border: 1px solid $color_4;
-	border-radius: 1em;
-	padding: 5px 10px;
-	font-size: 15px;
-	font-family: auto;
+.form__input,
+textarea,
+#form_selection {
+  width: 70%;
+  box-sizing: border-box;
+  border: 1px solid $color_4;
+  border-radius: 1em;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-family: auto;
 }
-.error_form{
-	margin-left: 100px;
-	color: $color_6;
-	font-weight: bold;
+.error_form {
+  margin-left: 100px;
+  color: $color_6;
+  font-weight: bold;
 }
-.form__submit{
-	width: 70%;
-	position: relative;
-	background: #262626;
-    padding: 10px;
-    color: $color_2;
-    text-transform: uppercase;
-    border-radius: 1em;
-    letter-spacing: 0.1em;
-    margin-top: 10px;
+.form__submit {
+  width: 70%;
+  position: relative;
+  background: #262626;
+  padding: 10px;
+  color: $color_2;
+  text-transform: uppercase;
+  border-radius: 1em;
+  letter-spacing: 0.1em;
+  margin-top: 10px;
 }
-
 
 @media (max-width: 992px) {
-	.content__form{
-		width: 80%;
-	}
-	h1{
-		width: 60%;
-	}
+  .content__form {
+    width: 80%;
+  }
+  h1 {
+    width: 60%;
+  }
 }
 @media (max-width: 767px) {
-	.content__form{
-		width: 90%;
-	}
-	.form__label{
-		width: 25%;
-		padding-right: 10px;
-	}
-
+  .content__form {
+    width: 90%;
+  }
+  .form__label {
+    width: 25%;
+    padding-right: 10px;
+  }
 }
